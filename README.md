@@ -1,0 +1,1 @@
+# Zerodha-Free-Historical-Data
