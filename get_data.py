@@ -17,6 +17,7 @@ def get_data(name, from_, to, interval):
     token = q['NSE:' + name]['instrument_token']
     data = kite.historical_data(token, from_date, to_date, interval)
     df = pd.DataFrame(data)
+    df = df.set_index('date')
     df.to_csv(name + '.csv')
 
 
